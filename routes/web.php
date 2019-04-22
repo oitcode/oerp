@@ -18,3 +18,11 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+/* Account */
+Route::get('/account', 'Account\MHomeController@showAccHome')->name('accHome');
+Route::get('/account/daybook', 'Account\DaybookController@showDayBookMenu');
+Route::get('/account/daybook/create',
+           'Account\DaybookController@showDaybookEntryForm')
+           ->name('accMHome');
+

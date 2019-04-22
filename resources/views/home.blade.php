@@ -1,11 +1,21 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container-fluid">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+	<!-- Module menu -->
+        <div class="col-md-2">
+	  <ul class="nav nav-pills nav-stacked">
+	    <li role="presentation" class="active"><a href="#">Home</a></li>
+	    <li role="presentation"><a href="#">Profile</a></li>
+	    <li role="presentation"><a href="#">Messages</a></li>
+          </ul>
+	</div>
+
+	<!-- Main screen -->
+        <div class="col-md-8">
             <div class="panel panel-default">
-                <div class="panel-heading">Admin Dashboard</div>
+                <div class="panel-heading">Oerp | &copy; OIT 2019</div>
 
                 <div class="panel-body">
                     @if (session('status'))
@@ -13,8 +23,6 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    You are logged in!
                 </div>
             </div>
         </div>
