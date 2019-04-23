@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('hl_t_home')
+active
+@endsection
+
 @section('content')
 <div class="container-fluid">
     <div class="row">

@@ -28,7 +28,7 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
+                    <a class="navbar-brand" href="{{ url('/home') }}">
                         {{ config('app.name', 'Laravel') }}
                     </a>
                 </div>
@@ -36,9 +36,9 @@
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                      <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-                      <li><a href="/account">Account</a></li>
-                      <li><a href="#">HR</a></li>
+                      <li class="@yield('hl_t_home')"><a href="/home">Home <span class="sr-only">(current)</span></a></li>
+                      <li class="@yield('hl_t_account')"><a href="/account">Account</a></li>
+                      <li class="@yield('hl_t_hr')"><a href="#">HR</a></li>
                       <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other <span class="caret"></span></a>
                         <ul class="dropdown-menu">
