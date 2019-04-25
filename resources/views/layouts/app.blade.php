@@ -37,6 +37,7 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
                       <li class="@yield('hl_t_home')"><a href="/home">Home <span class="sr-only">(current)</span></a></li>
+                      <li class="@yield('hl_t_shop')"><a href="/shop">Shop</a></li>
                       <li class="@yield('hl_t_account')"><a href="/account">Account</a></li>
                       <li class="@yield('hl_t_hr')"><a href="#">HR</a></li>
                       <li class="dropdown">

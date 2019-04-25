@@ -26,3 +26,14 @@ Route::get('/account/daybook/create',
            'Account\DaybookController@showDaybookEntryForm')
            ->name('accMHome');
 
+/* Shop */
+Route::get('/shop', 'Shop\MHomeController@showShopHome')->name('shopHome');
+Route::get('/shop/products', 'Shop\ProductMenuController@showProductMenuPage')->name('productHome');
+Route::get('/shop/products/create', 'Shop\ProductController@showProductCreatePage')->name('productCreate');
+Route::post('/shop/products/create/process', 'Shop\ProductController@productCreate')->name('productCreateProcess');
+Route::get('/shop/products/list', 'Shop\ProductController@listProducts');
+// Route::get('/account/daybook', 'Account\DaybookController@showDayBookMenu');
+// Route::get('/account/daybook/create',
+//            'Account\DaybookController@showDaybookEntryForm')
+//            ->name('accMHome');
+
