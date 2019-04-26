@@ -1,7 +1,7 @@
-@extends('account.mapp')
+@extends('shop.mapp')
 
 <!-- Highlight daybook in module menu -->
-@section('hl_daybook')
+@section('hl_sales')
 active
 @endsection
 
@@ -10,16 +10,16 @@ active
 <!-- Show breadcrumb -->
 <div>
       <ol class="breadcrumb">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Account</a></li>
-        <li><a href="/account/daybook">Daybook</a></li>
-        <li class="active">Create</li>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/shop">Shop</a></li>
+        <li><a href="/shop/sales">Sales</a></li>
+        <li class="active">Daybook</li>
       </ol>
 </div>
 
 <!-- Main panel -->
 <div class="panel panel-default">
-    <div class="panel-heading">Daybook Entry</div>
+    <div class="panel-heading">Sales Daybook Entry</div>
 
     <div class="panel-body">
       @if (session('status'))

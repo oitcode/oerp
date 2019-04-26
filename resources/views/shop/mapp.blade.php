@@ -13,6 +13,7 @@ active
 	    <li role="presentation" class="@yield('hl_mhome')"><a href="/shop">Home</a></li>
 	    <li role="presentation" class="@yield('hl_products')"><a href="/shop/products">Products</a></li>
 	    <li role="presentation" class="@yield('hl_sales')"><a href="/shop/sales">Sales</a></li>
+	    <li role="presentation" class="@yield('hl_purchase')"><a href="/shop/purchase">Purchase</a></li>
           </ul>
 	</div>
 

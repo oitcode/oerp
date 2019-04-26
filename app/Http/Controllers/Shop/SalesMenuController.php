@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Shop;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class ProductMenuController extends Controller
+class SalesMenuController extends Controller
 {
     /**
      * Instantiate a new controller instance.
@@ -18,9 +18,9 @@ class ProductMenuController extends Controller
         $this->middleware('auth');
     }
 
-    /* Show product menu page. */
-    public function showProductMenuPage()
+    /* Show sales menu page. */
+    public function showSalesMenuPage()
     {
-        return view('shop.product-menu');
+        return view('shop.sales-menu');
     }
 }
